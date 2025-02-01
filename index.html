@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="mini-container">
+          <img class="me" src="./Becca.jpeg" alt="img">
+          <p class="name"> Oyewole R. Olufunmi  <br>
+           <span style="color: blue; font-size: 15px;">Front-end Developer </span>   </p>
+           <p> A versatile, hardworking individual; driven to meet and exceed a company’s expectations to deliver high-quality software products. Experienced in HTML, CSS, JavaScript, Typescript, and React. Offers a strong background in creative problem-solving and a proven ability to multi-task and prioritize in fast-paced environments.</p>
+           <p><i class="fa fa-map-marker" aria-hidden="true" style="color: blue;" ></i> Ikorodu, Lagos Nigeria
+           </p>
+          <p><i class="fa fa-envelope" aria-hidden="true" style="color: blue;"></i>  oyewoleolufunmi@gmail.com </p> 
+          <p> <img class="git" src="./github.svg" alt=""><a href="" target="_blank"> https://github.com/Becca-Hamzy/Becca-Hamzy
+          </a>
+          </p>   
+            <p><img class="lin" src="./icons8-linkedin-50.png" alt=""> <a href="" target="_blank">https://www.linkedin.com/in/oyewole-olufunmi</a></p>
+           
+            
+            <p><span style="color: blue;" data-testid="currentTimeUTC" id="utc-time">Sat, 01 Feb 2025 17:53:41 GMT</span></p>
+            
+        </div>
+
+    </div>
+    <script>
+        function updateTime() {
+            const utcTime = new Date().toUTCString();
+            document.getElementById("utc-time").textContent = utcTime;
+        }
+        updateTime();
+        setInterval(updateTime, 1000); 
+    </script>
+</body>
+</html>
